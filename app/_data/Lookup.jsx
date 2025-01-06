@@ -5,5 +5,5 @@ export default {
     // HeroHeading: "Craft with Nimbus",
     HeroSubheading: "Effortless logo design for businesses, creators, and dreamers alike",
     HeroDescription: "Experience seamless logo creation with Nimbus Arc. Transform ideas into stunning visuals that define your brand in just a few clicks.",
-    HeroInputPlaceholder: "An italian pizza restaurant based in india... ",
+    HeroInputPlaceholder: "An italian pizza restaurant... ",
 }

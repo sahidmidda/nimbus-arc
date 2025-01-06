@@ -1,6 +1,7 @@
 import React from 'react'
 import Lookup from '../_data/Lookup'
 import { Button } from '@/components/ui/button'
+import Image from 'next/image'
 
 function Hero() {
     return (
@@ -13,7 +14,7 @@ function Hero() {
             <h3 className='text-4xl font-semibold text-primary bg-black p-2 italic'>
                 {Lookup.HeroSubheading}
             </h3>
-            <p className='text-[16px] text-gray-700'>
+            <p className='text-[16px] text-gray-500'>
                 {Lookup.HeroDescription}
             </p>
 
@@ -21,6 +22,14 @@ function Hero() {
                 <input type="text" placeholder={Lookup.HeroInputPlaceholder} className='p-3 w-full border border-gray-300 outline-gray-300 rounded-md shadow-md' />
                 <Button className='text-black p-6 font-sans text-md' >
                     Generate
+                </Button>
+            </div>
+
+            <div className="block mt-20">
+                <Button className='p-6 text-md bg-yellow-300 text-black font-mono text-md font-[500]'>
+                    Explore Other's Creations on the Market
+                    {/* &nbsp; */}
+                    <Image src={'./globe.svg'} width='24' height='24' alt='globe' className='ml-2' />
                 </Button>
             </div>
         </div>
