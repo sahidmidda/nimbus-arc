@@ -25,9 +25,14 @@ export default {
 					DEFAULT: 'rgb(153 255 62);', // NEON GREEN
 					foreground: 'hsl(var(--primary-foreground))'
 				},
+				darkprimary: {
+					// DEFAULT: '#058C42;', // DARK GREEN
+					DEFAULT: '#04724D;', // DARK GREEN
+					foreground: 'hsl(var(--primary-foreground))'
+				},
 				secondary: {
-					DEFAULT: 'hsl(var(--secondary))',
-					foreground: 'hsl(var(--secondary-foreground))'
+					// DEFAULT: 'hsl(var(--secondary))',
+					DEFAULT: 'rgb(223,223,223);', foreground: 'hsl(var(--secondary-foreground))'
 				},
 				muted: {
 					DEFAULT: 'hsl(var(--muted))',

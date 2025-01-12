@@ -4,7 +4,6 @@ import React, { useState } from 'react'
 import Lookup from '../_data/Lookup'
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
-import Link from 'next/link';
 import { useRouter } from 'next/navigation'
 
 function Hero() {
