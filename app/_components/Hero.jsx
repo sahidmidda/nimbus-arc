@@ -20,15 +20,15 @@ function Hero() {
 
     return (
         <div className='flex flex-col justify-center items-center mt-20 gap-6 text-center' >
-            <h2 className='text-5xl font-[800]' style={{
+            <h2 className='text-4xl xl:text-5xl font-[800]' style={{
                 fontFamily: "Playfair Display",
             }}>
                 {Lookup.HeroHeading}
             </h2>
-            <h3 className='text-4xl font-semibold text-primary bg-black p-2 italic'>
+            <h3 className='text-3xl xl:text-4xl font-semibold text-primary bg-black p-2 italic'>
                 {Lookup.HeroSubheading}
             </h3>
-            <p className='text-[16px] text-gray-500'>
+            <p className='text-sm xl:text-[16px] text-gray-500'>
                 {Lookup.HeroDescription}
             </p>
 

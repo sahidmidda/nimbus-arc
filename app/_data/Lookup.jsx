@@ -13,4 +13,32 @@ export default {
     createCompStep4Description: "Select the type of logo design that best represents your brands unique identity.",
     createCompStep5Title: "Select your Design Idea",
     createCompStep5Description: "Choose a design style that aligns with your vision, or skip to receive a random suggestion.",
+    createCompStep6Title: "Select your plan",
+    createCompStep6Description: "Generate unlimited logos with your favourite model!",
+    logoGeneratingWaitTitle: "Your logo is being created...",
+    logoGeneratingWaitDescription: "✨ Please wait a moment while we work our magic to bring your idea to life.",
+    pricingOptions: [
+        {
+            title: "Free",
+            icon: "/assets/free.png",
+            features: [
+                'Generate Unlimited Logos for free',
+                'Longer wait times',
+                'Wait time: 30 secs - 3 mins',
+                'Limited design options and low quality',
+            ],
+            button: 'Generate for Free',
+        },
+        {
+            title: "Premium",
+            icon: "/assets/thunder.png",
+            features: [
+                'Generate Unlimited Logos',
+                'Shorter wait times',
+                'Wait time: < 10 seconds',
+                'Get 5 Credits',
+            ],
+            button: 'Generate for 1 Credit',
+        },
+    ],
 }

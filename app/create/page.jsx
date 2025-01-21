@@ -9,6 +9,7 @@ import ColorPaletteComp from './_components/ColorPaletteComp';
 import DesignStyleComp from './_components/DesignStyleComp';
 import DesignIdeaComp from './_components/DesignIdeaComp';
 import { useSearchParams } from 'next/navigation';
+import PricingModelComp from './_components/PricingModelComp';
 
 function CreateLogo() {
     const [step, setStep] = useState(1);
@@ -20,6 +21,7 @@ function CreateLogo() {
         palette: null,
         style: "",
         idea: "",
+        pricing: "",
     });
     const components = {
         1: TitleComp,
@@ -27,6 +29,7 @@ function CreateLogo() {
         3: ColorPaletteComp,
         4: DesignStyleComp,
         5: DesignIdeaComp,
+        6: PricingModelComp,
     };
     // Get the component based on the current step
     const CurrentComponent = components[step];
@@ -56,8 +59,10 @@ function CreateLogo() {
                     <DesignStyleComp onHandleInputChange={onHandleInputChange} />
                 ) : step === 5 ? (
                     <DesignIdeaComp onHandleInputChange={onHandleInputChange} />
+                )   step === 6 ? (
+                    <PricingModelComp onHandleInputChange={onHandleInputChange} />
                 ) : (
-                    <div className="">Not Found 404</div>
+                    <div className="">404 - Not Found</div>
                 )
             } */}
             {CurrentComponent ? <CurrentComponent onHandleInputChange={onHandleInputChange} formData={formData} /> : <div>No Component Found</div>}
